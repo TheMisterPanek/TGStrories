@@ -4,8 +4,22 @@
   "description": "Server for telegram stories bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "dev": "ts-node src/app.ts",
+    "start": "ts-node dist/app.js",
+    "build": "tsc -p ."
   },
   "author": "TheMisterPanek",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
 }
